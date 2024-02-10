@@ -60,7 +60,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <div class="icon">
                   <i class="fas fa-chart-pie"></i>
                 </div>
-                {{-- <a href="{{route('login.index')}}" class="small-box-footer"> --}}
+                <a href="#" class="small-box-footer">
                   ເຂົ້າສູ່ລະບົບ  <i class="fas fa-arrow-circle-right"></i>
                 </a>
               </div>

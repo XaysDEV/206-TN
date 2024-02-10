@@ -91,7 +91,6 @@ class UserController extends Controller
     public function edit($id)
     {
         $user = User::find($id);
-
         $role = Role::where('del',1)->get();
         $rank = Rank::where('del',1)->get();
         return view('user.edit', compact('user','role','rank'));

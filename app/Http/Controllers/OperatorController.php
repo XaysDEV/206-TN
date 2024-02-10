@@ -2,7 +2,12 @@
 
 namespace App\Http\Controllers;
 
+
+use App\Models\Role;
+use App\Models\operas;
+use App\Models\opera_status;
 use Illuminate\Http\Request;
+use PHPUnit\Framework\Constraint\Operator;
 
 class OperatorController extends Controller
 {
@@ -19,7 +24,8 @@ class OperatorController extends Controller
      */
     public function create()
     {
-        //
+        $opera_status = opera_status::where('del',1)->get();
+        return view('operator.create', compact('opera_status'));
     }
 
     /**
